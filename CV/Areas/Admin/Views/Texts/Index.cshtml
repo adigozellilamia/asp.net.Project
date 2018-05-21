@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CV.Models.Text>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create","texts",null, new {@class="btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tittle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title_content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Page)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End_date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.Raw(item.Tittle )
+        </td>
+        <td>
+            @Html.Raw(item.Title_content)
+        </td>
+        <td>
+            @Html.Raw(item.Text1.Length > 100 ? item.Text1.Substring(0, 100):item.Text1)
+        </td>
+        <td>
+            @Html.Raw(item.Page)
+        </td>
+        <td>
+            @Html.Raw(item.Start_date)
+        </td>
+        <td>
+            @Html.Raw(item.End_date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

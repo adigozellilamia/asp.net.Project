@@ -1,0 +1,67 @@
+﻿@model CV.Models.Text
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Text</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tittle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tittle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title_content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title_content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Page)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Page)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

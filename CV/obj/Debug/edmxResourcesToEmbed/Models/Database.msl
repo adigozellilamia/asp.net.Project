@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CvModelStoreContainer" CdmEntityContainer="CvEntities2">
+    <EntitySetMapping Name="Abouts">
+      <EntityTypeMapping TypeName="CvModel.About">
+        <MappingFragment StoreEntitySet="About">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Title_content" ColumnName="Title_content" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Icons">
+      <EntityTypeMapping TypeName="CvModel.Icon">
+        <MappingFragment StoreEntitySet="Icon">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Icons" ColumnName="Icons" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lists">
+      <EntityTypeMapping TypeName="CvModel.List">
+        <MappingFragment StoreEntitySet="List">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="List1" ColumnName="List" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Texts">
+      <EntityTypeMapping TypeName="CvModel.Text">
+        <MappingFragment StoreEntitySet="Text">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Tittle" ColumnName="Tittle" />
+          <ScalarProperty Name="Title_content" ColumnName="Title_content" />
+          <ScalarProperty Name="Text1" ColumnName="Text" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Start_date" ColumnName="Start_date" />
+          <ScalarProperty Name="End_date" ColumnName="End_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CvModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
